@@ -13,29 +13,6 @@ Each configuration file is organized into logical sections:
 
 For any settings not defined in the settings file, FDA will read from the Global Settings defined in the FossID Configuration (fossid.conf). These settings files focus only on language-specific settings that may vary by project.
 
-## Supported Language Ecosystems
-Each language directory contains a sample `fossid-settings.toml` file that can be copied to your project's root directory to tell FDA how you want it to analyze your project.
-
-| Language/Ecosystem | Directory | Supported Package Managers |
-|-------------------|-----------|----------------------------|
-| JavaScript/Node.js | [javascript/](javascript/) | NPM, Yarn, PNPM, Bower |
-| Java/Scala/Kotlin | [java/](java/) | Maven, Gradle, Ivy, SBT |
-| Python | [python/](python/) | PIP, Pipenv, Poetry, Hatch |
-| Ruby | [ruby/](ruby/) | Bundler, Gem |
-| .NET/C# | [dotnet/](dotnet/) | NuGet |
-| Go | [go/](go/) | Go Modules, Dep, Glide, Godep |
-| C/C++ | [cpp/](cpp/) | Conan, CMake |
-| PHP | [php/](php/) | Composer |
-| Swift/Objective-C | [swift/](swift/) | CocoaPods, Carthage, Swift Package Manager |
-| Rust | [rust/](rust/) | Cargo |
-| Dart/Flutter | [dart/](dart/) | Pub |
-| Haskell | [haskell/](haskell/) | Cabal, Stack |
-| Elixir | [elixir/](elixir/) | Hex, Mix |
-| Bazel | [bazel/](bazel/) | Bazel build system |
-| Pants | [pants/](pants/) | Pants build system |
-| Yocto | [yocto/](yocto/) | Yocto, BitBake |
-| Android Soong | [soong/](soong/) | Android build system |
-
 ## How to Use these Configuration Files
 
 1. Choose the configuration file for your project's programming language
