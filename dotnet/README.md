@@ -21,5 +21,13 @@ FossID-DA can analyze the following .NET manifest files:
 ### Processing Options
 - `da_ignore_lock_manifests`: Ignore lock files (packages.lock.json) and use project files
 
+### Dependency Scopes
+- `da_ds_test_dependencies`: Process test frameworks like MSTest, NUnit, xUnit, Moq, FluentAssertions
+- `da_ds_dev_dependencies`: Process development tools, analyzers, code generators (StyleCop, Roslyn analyzers)
+- `da_ds_optional_dependencies`: Process conditional dependencies based on target framework or platform
+
+### Dependency Tree Depth
+- `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default)
+
 ## Usage
 Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 

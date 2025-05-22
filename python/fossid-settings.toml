@@ -3,7 +3,7 @@
 
 [dependency-analysis]
 # Add supported package managers for this ecosystem
-supported_package_managers = ["PyPI"]
+supported_package_managers = ["PIP", "Pipenv", "Poetry", "Hatch"]
 
 [dependency-analysis.system_settings]
 # Operating system setting - affects binary wheel selection and platform-specific dependencies

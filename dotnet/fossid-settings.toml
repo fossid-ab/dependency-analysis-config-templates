@@ -20,6 +20,11 @@ da_dotnet_standard = ".NETStandard1.3"
 # If 1, ignores lock files and uses project files
 da_ignore_lock_manifests = 0
 
+[dependency-analysis.dependency_scopes]
+da_ds_test_dependencies = 0        # Test frameworks like MSTest, NUnit, xUnit, Moq, FluentAssertions
+da_ds_dev_dependencies = 0         # Build tools, analyzers, code generators (StyleCop, Roslyn analyzers)
+da_ds_optional_dependencies = 0    # Conditional dependencies based on target framework or platform
+
 [dependency-analysis.graph_depth]
 # Set maximum depth for dependency tree traversal
 da_gd_general = 4

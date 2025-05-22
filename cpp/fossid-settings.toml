@@ -16,6 +16,11 @@ da_os_type = "linux"      # Used when resolving platform-specific libraries and 
 # If 1, ignores lock files and uses conanfile.txt/conanfile.py
 da_ignore_lock_manifests = 0
 
+[dependency-analysis.dependency_scopes]
+da_ds_test_dependencies = 0        # Test frameworks like gtest, catch2, doctest, CppUnit
+da_ds_dev_dependencies = 0         # Build tools, static analysis (clang-tidy, cppcheck, valgrind)
+da_ds_optional_dependencies = 0    # Optional components, features, or platform-specific libraries
+
 [dependency-analysis.graph_depth]
 # Set maximum depth for dependency tree traversal
 da_gd_general = 4

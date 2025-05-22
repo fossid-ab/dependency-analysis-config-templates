@@ -23,7 +23,6 @@ da_single_dependency_versions = 0
 da_ignore_hidden_files = 1
 
 [dependency-analysis.dependency_scopes]
-# Dependency scope options
 da_ds_test_dependencies = 0    # Components marked as test-suite in .cabal files
 da_ds_dev_dependencies = 0     # Build-depends in benchmark and test-suite sections
 da_ds_optional_dependencies = 0 # Dependencies with flags or conditionals (if flag(feature))

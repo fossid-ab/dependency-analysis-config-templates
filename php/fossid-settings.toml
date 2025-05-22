@@ -14,8 +14,6 @@ da_ignore_lock_manifests = 0
 [dependency-analysis.dependency_scopes]
 # PHP-specific dependency scopes
 da_ds_ext_dependencies = 0    # PHP extension dependencies like ext-curl, ext-json
-
-# PHP dependency scope options
 da_ds_test_dependencies = 0        # Controls processing of test packages in require-dev
 da_ds_dev_dependencies = 0         # Controls processing of "require-dev" section
 da_ds_optional_dependencies = 0    # Controls processing of "suggest" section

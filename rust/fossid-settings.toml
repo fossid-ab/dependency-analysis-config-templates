@@ -17,7 +17,6 @@ da_os_type = "linux"      # Affects conditional dependencies with [target.'cfg(u
 da_ignore_lock_manifests = 0
 
 [dependency-analysis.dependency_scopes]
-# Rust dependency scope options
 da_ds_test_dependencies = 0        # Dependencies in [dev-dependencies] used in #[cfg(test)]
 da_ds_dev_dependencies = 0         # Development tools in [dev-dependencies] like clippy, rustfmt
 da_ds_optional_dependencies = 0    # Features declared with [features] and optional = true

@@ -17,6 +17,14 @@ FossID-DA can analyze the following C/C++ manifest files:
 - `da_cpp_import_search`: Detect dependencies from C/C++ includes in source files
 - `da_only_unmanaged`: Process only unmanaged dependencies from includes
 
+### Dependency Scopes
+- `da_ds_test_dependencies`: Process test frameworks like gtest, catch2, doctest, CppUnit
+- `da_ds_dev_dependencies`: Process development tools, build tools, static analysis (clang-tidy, cppcheck, valgrind)
+- `da_ds_optional_dependencies`: Process optional dependencies, features, or platform-specific libraries
+
+### Dependency Tree Depth
+- `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default)
+
 ## Import Detection Feature
 When `da_cpp_import_search = true` is set, FossID-DA will analyze C/C++ includes directly from source files:
 

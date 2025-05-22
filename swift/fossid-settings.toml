@@ -15,15 +15,22 @@ da_cocoapod_version = "1.15.2"
 da_swift_version = "5.10"
 
 [dependency-analysis.git_options]
-# GitHub token for API requests (highly recommended)
+# GitHub token for API requests
+# RECOMMENDED: Define these tokens globally in the FossID configuration rather than here to minimize security risks
+# If not defined, API rate limits apply (60 queries/hour) which may impact analysis of larger projects
 da_git_user = ""
-da_git_token = ""          # Without a token, rate limits apply (60 queries/hour)
+da_git_token = ""
 
 [dependency-analysis.scan_options]
 # Lock file handling
 # If 0, uses lock files (Podfile.lock, Cartfile.resolved) when available
 # If 1, ignores lock files and uses Podfile, Cartfile
 da_ignore_lock_manifests = 0
+
+[dependency-analysis.dependency_scopes]
+da_ds_test_dependencies = 0        # Test frameworks like XCTest, Quick, Nimble, OCMock
+da_ds_dev_dependencies = 0         # Development tools like SwiftLint, SwiftFormat, R.swift
+da_ds_optional_dependencies = 0    # Optional pods, subspecs, or conditional dependencies
 
 [dependency-analysis.graph_depth]
 # Set maximum depth for dependency tree traversal

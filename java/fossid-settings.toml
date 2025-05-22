@@ -15,7 +15,6 @@ da_scala_version = "2.11"   # Impacts cross-version dependencies and Scala libra
 da_allow_dynamic_scopes = 0
 
 [dependency-analysis.dependency_scopes]
-# Maven-specific dependency scopes
 da_ds_plugin_dependencies = 1       # Maven build plugins (<build><plugins>) that may contain dependencies
 da_ds_extensions_dependencies = 0   # Maven build extensions that alter build behavior (<build><extensions>)
 da_ds_provided_dependencies = 0     # Dependencies marked as <scope>provided</scope> (e.g., servlet-api, javax)

@@ -27,7 +27,6 @@ da_allow_node_modules_processing = 0  # Set to 1 to process nested package.json 
 da_ignore_lock_manifests = 0
 
 [dependency-analysis.dependency_scopes]
-# NPM-specific dependency scopes
 da_ds_peer_dependencies = 0     # Libraries like React, webpack plugins - dependencies expected to be provided
 da_ds_dev_dependencies = 0      # Build tools, test frameworks, linters (eslint, jest, webpack, etc.)
 da_ds_optional_dependencies = 0 # Packages that enhance functionality but aren't required (chalk, debug, etc.)

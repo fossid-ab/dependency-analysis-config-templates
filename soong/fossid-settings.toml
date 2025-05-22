@@ -18,7 +18,6 @@ da_single_dependency_versions = 0
 da_ignore_hidden_files = 1
 
 [dependency-analysis.dependency_scopes]
-# Dependency scope options
 da_ds_test_dependencies = 0    # Controls processing of test module dependencies
 
 [dependency-analysis.graph_depth]

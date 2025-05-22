@@ -9,18 +9,20 @@ FossID-DA can analyze the following Rust manifest files:
 ## Key Configuration Options
 
 ### Environment Settings
-- `da_os_type`: Operating system type (important for platform-specific features/dependencies)
+- `da_os_type`: Operating system setting (corresponds to Rust's target-specific dependencies)
+  Affects conditional dependencies with [target.'cfg(unix)'.dependencies]
 
 ### Processing Options
-- `da_ignore_lock_manifests`: Ignore lock files (Cargo.lock) and use Cargo.toml
+- `da_ignore_lock_manifests`: If 0, uses lock files (Cargo.lock) when available
+  If 1, ignores lock files and uses Cargo.toml
 
 ### Dependency Scopes
-- `da_ds_test_dependencies`: Process dependencies needed for tests
-- `da_ds_dev_dependencies`: Process "dev-dependencies" section
-- `da_ds_optional_dependencies`: Process optional features
+- `da_ds_test_dependencies`: Process Dependencies in [dev-dependencies] used in #[cfg(test)]
+- `da_ds_dev_dependencies`: Process Development tools in [dev-dependencies] like clippy, rustfmt
+- `da_ds_optional_dependencies`: Process Features declared with [features] and optional = true
 
 ### Dependency Tree Depth
-- `da_gd_cargo`: Maximum depth for the dependency tree traversal
+- `da_gd_cargo`: Maximum depth for the dependency tree traversal (4 is the default)
 
 ## Usage
 Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 

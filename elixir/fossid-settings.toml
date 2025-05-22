@@ -23,7 +23,6 @@ da_single_dependency_versions = 0
 da_ignore_hidden_files = 1
 
 [dependency-analysis.dependency_scopes]
-# Dependency scope options
 da_ds_test_dependencies = 0    # Dependencies with only: :test in deps() function
 da_ds_dev_dependencies = 0     # Dependencies with only: :dev in deps() function
 da_ds_optional_dependencies = 0 # Dependencies with optional: true in deps() function
