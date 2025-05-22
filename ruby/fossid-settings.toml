@@ -1,0 +1,30 @@
+# FossID-DA Configuration for Ruby
+# Applies to: Bundler, Gem projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["Gem"]
+
+[dependency-analysis.system_settings]
+# Version settings
+da_ruby_version = "3.2.2"
+da_gem_version = "3.0.3"
+
+[dependency-analysis.scan_options]
+# Lock file handling
+# If 0, uses lock files (Gemfile.lock) when available
+# If 1, ignores lock files and uses manifests
+da_ignore_lock_manifests = 0
+
+[dependency-analysis.dependency_scopes]
+# Ruby dependency scope options
+da_ds_test_dependencies = 0        # Controls processing of test groups in Gemfile
+da_ds_dev_dependencies = 0         # Controls processing of development groups in Gemfile
+da_ds_optional_dependencies = 0    # Controls processing of optional groups in Gemfile
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_gem = 7
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

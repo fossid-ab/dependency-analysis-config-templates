@@ -1,0 +1,24 @@
+# FossID-DA Configuration for PHP/Composer
+# Applies to: Composer projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["Composer"]
+
+[dependency-analysis.scan_options]
+# Lock file handling
+# If 0, uses lock files (composer.lock) when available
+# If 1, ignores lock files and uses composer.json
+da_ignore_lock_manifests = 0
+
+[dependency-analysis.dependency_scopes]
+# PHP-specific dependency scopes
+da_ds_ext_dependencies = 0    # PHP extension dependencies like ext-curl, ext-json
+
+# PHP dependency scope options
+da_ds_test_dependencies = 0        # Controls processing of test packages in require-dev
+da_ds_dev_dependencies = 0         # Controls processing of "require-dev" section
+da_ds_optional_dependencies = 0    # Controls processing of "suggest" section
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

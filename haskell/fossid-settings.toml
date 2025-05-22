@@ -1,0 +1,36 @@
+# FossID-DA Configuration for Haskell
+# Applies to: Cabal, Stack projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["Haskell"]
+
+[dependency-analysis.system_settings]
+# Operating system setting
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"      # Affects platform-specific package flags and configurations
+
+[dependency-analysis.scan_options]
+# Lock file handling
+# If 0, uses lock files (cabal.project.freeze, stack.yaml.lock) when available
+# If 1, ignores lock files and uses cabal.project, stack.yaml
+da_ignore_lock_manifests = 0
+
+# Use single dependency version in dependency tree
+da_single_dependency_versions = 0
+
+# Ignore hidden files from being processed
+da_ignore_hidden_files = 1
+
+[dependency-analysis.dependency_scopes]
+# Dependency scope options
+da_ds_test_dependencies = 0    # Components marked as test-suite in .cabal files
+da_ds_dev_dependencies = 0     # Build-depends in benchmark and test-suite sections
+da_ds_optional_dependencies = 0 # Dependencies with flags or conditionals (if flag(feature))
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_general = 4
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

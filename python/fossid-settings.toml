@@ -1,0 +1,43 @@
+# FossID-DA Configuration for Python
+# Applies to: PIP, Pipenv, Poetry, Hatch projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["PyPI"]
+
+[dependency-analysis.system_settings]
+# Operating system setting - affects binary wheel selection and platform-specific dependencies
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"          # Determines which wheels are selected (e.g., manylinux vs win32)
+
+# Python version setting
+da_python_version = "3.11.4"   # Affects compatibility checks and version-specific package variants
+
+[dependency-analysis.scan_options]
+# Lock file handling
+# If 0, uses lock files (Pipfile.lock, poetry.lock) when available 
+# If 1, ignores lock files and uses manifests
+da_ignore_lock_manifests = 0
+
+[dependency-analysis.import_scan_options]
+# Get dependencies from Python source imports
+da_py_import_search = 0    # Analyzes "import" and "from ... import" statements in source code
+
+# Process only unmanaged dependencies from imports
+da_only_unmanaged = 0      # Applies when da_py_import_search=1
+
+[dependency-analysis.dependency_scopes]
+# Hatch environment settings
+da_ds_hatch_envs = ""          # Comma-separated environments to process (e.g., "default,lint")
+
+# Python dependency scope options
+da_ds_test_dependencies = 0        # pytest, unittest, nose dependencies in "test" extras or tests_require
+da_ds_dev_dependencies = 0         # Development tools like black, mypy in "dev" extras
+da_ds_optional_dependencies = 0    # Optional feature groups specified in extras_require (e.g., [aws], [postgres])
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_pypi = 3
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = ""   # Comma-separated folders to ignore, e.g., "venv,build,dist" 

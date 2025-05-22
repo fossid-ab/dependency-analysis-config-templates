@@ -1,0 +1,34 @@
+# FossID-DA Configuration for Java/Scala/Kotlin
+# Applies to: Maven, Gradle, Ivy, SBT projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["Maven", "Gradle", "Ivy", "SBT"]
+
+[dependency-analysis.system_settings]
+# Version settings
+da_maven_version = "3.9.2"  # Affects POM resolution strategy and repository access
+da_scala_version = "2.11"   # Impacts cross-version dependencies and Scala library resolution
+
+[dependency-analysis.scan_options]
+# Allow dynamic scopes (important for Maven/Gradle projects)
+da_allow_dynamic_scopes = 0
+
+[dependency-analysis.dependency_scopes]
+# Maven-specific dependency scopes
+da_ds_plugin_dependencies = 1       # Maven build plugins (<build><plugins>) that may contain dependencies
+da_ds_extensions_dependencies = 0   # Maven build extensions that alter build behavior (<build><extensions>)
+da_ds_provided_dependencies = 0     # Dependencies marked as <scope>provided</scope> (e.g., servlet-api, javax)
+da_ds_runtime_dependencies = 1      # Dependencies marked as <scope>runtime</scope> or default compile scope
+da_ds_library_dependencies = 0      # SBT/Scala libraryDependencies
+da_ds_framework = 0                 # Framework dependencies in SBT/Scala projects
+da_ds_classpath_dependencies = 0    # Dependencies added directly to classpath rather than declared in POM
+da_ds_test_dependencies = 0         # Dependencies marked as <scope>test</scope> (JUnit, TestNG, Mockito)
+da_ds_optional_dependencies = 0     # Dependencies marked with <optional>true</optional>
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_maven = 5
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

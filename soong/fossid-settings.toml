@@ -1,0 +1,29 @@
+# FossID-DA Configuration for Soong
+# Applies to: Android build system
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["Soong"]
+
+[dependency-analysis.system_settings]
+# Operating system setting
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"
+
+[dependency-analysis.scan_options]
+# Use single dependency version in dependency tree
+da_single_dependency_versions = 0
+
+# Ignore hidden files from being processed
+da_ignore_hidden_files = 1
+
+[dependency-analysis.dependency_scopes]
+# Dependency scope options
+da_ds_test_dependencies = 0    # Controls processing of test module dependencies
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_general = 4
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

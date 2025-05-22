@@ -1,0 +1,29 @@
+# Haskell Configuration for FossID-DA
+
+This directory contains a sample configuration file for Haskell projects that use Cabal or Stack.
+
+## Manifest Files
+FossID-DA can analyze the following Haskell manifest files:
+- Cabal: `*.cabal`, `cabal.project`, `cabal.project.freeze`
+- Stack: `stack.yaml`, `stack.yaml.lock`
+
+## Key Configuration Options
+
+### System Settings
+- `da_os_type`: Operating system type for dependency resolution
+
+### Scanning Options
+- `da_ignore_lock_manifests`: Ignore lock files and use project files
+- `da_single_dependency_versions`: Use single dependency version in tree
+- `da_ignore_hidden_files`: Ignore hidden files from being processed
+
+### Dependency Scopes
+- `da_ds_test_dependencies`: Process test suites and test dependencies
+- `da_ds_dev_dependencies`: Process development dependencies
+- `da_ds_optional_dependencies`: Process optional dependencies
+
+### Dependency Tree Depth
+- `da_gd_general`: Maximum depth for the dependency tree traversal
+
+## Usage
+Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 

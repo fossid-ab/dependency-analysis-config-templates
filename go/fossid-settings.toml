@@ -1,0 +1,40 @@
+# FossID-DA Configuration for Go
+# Applies to: Go Modules, Dep, Glide, Godep
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["Go"]
+
+[dependency-analysis.system_settings]
+# Operating system setting (important for platform-specific code)
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"      # Affects build tags and conditional imports (// +build linux)
+
+[dependency-analysis.git_options]
+# GitHub token for API requests (highly recommended)
+da_git_user = ""
+da_git_token = ""         # Without a token, rate limits apply (60 queries/hour)
+
+[dependency-analysis.scan_options]
+# Lock file handling
+# If 0, uses lock files (go.sum) when available
+# If 1, ignores lock files and uses go.mod
+da_ignore_lock_manifests = 0
+
+[dependency-analysis.import_scan_options]
+# Get dependencies from Go source imports
+da_go_import_search = 0    # Set to 1 to analyze imports in .go files
+
+# Process only unmanaged dependencies from imports
+da_only_unmanaged = 0      # Applies when da_go_import_search=1
+
+[dependency-analysis.dependency_scopes]
+# Process indirect/transitive dependencies
+da_ds_indirect_dependencies = 0    # Dependencies marked with // indirect comment in go.mod
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_go = 2
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

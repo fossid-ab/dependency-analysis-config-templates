@@ -1,0 +1,40 @@
+# FossID-DA Configuration for JavaScript/Node.js
+# Applies to: NPM, Yarn, PNPM, Bower projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["NPM", "Yarn", "PNPM", "Bower"]
+
+[dependency-analysis.system_settings]
+# Operating system setting - critical for native modules (node-gyp based packages)
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"        # Affects binary/compiled dependencies like sqlite3, canvas, sharp, etc.
+
+# Node.js and NPM version settings
+da_npm_version = "7.24.2"    # Affects resolution strategy, package-lock.json format, and engine constraints
+da_node_version = "14.21.3"  # Affects compatibility with packages that specify "engines.node" restrictions
+
+[dependency-analysis.scan_options]
+# Enable Yarn instead of NPM for dependency resolution
+da_use_yarn = 0             # Set to 1 if your project uses Yarn's resolution algorithm (relevant for monorepos)
+
+# Allow processing of manifest files inside node_modules folders
+da_allow_node_modules_processing = 0  # Set to 1 to process nested package.json files (increases scan time)
+
+# Lock file handling
+# If 0, uses lock files (package-lock.json/yarn.lock/pnpm-lock.yaml) when available
+# If 1, ignores lock files and uses package.json
+da_ignore_lock_manifests = 0
+
+[dependency-analysis.dependency_scopes]
+# NPM-specific dependency scopes
+da_ds_peer_dependencies = 0     # Libraries like React, webpack plugins - dependencies expected to be provided
+da_ds_dev_dependencies = 0      # Build tools, test frameworks, linters (eslint, jest, webpack, etc.)
+da_ds_optional_dependencies = 0 # Packages that enhance functionality but aren't required (chalk, debug, etc.)
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal (0 = direct dependencies only)
+da_gd_npm = 10
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

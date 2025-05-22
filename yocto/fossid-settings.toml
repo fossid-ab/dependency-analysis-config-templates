@@ -1,0 +1,30 @@
+# FossID-DA Configuration for Yocto
+# Applies to: Yocto Project, BitBake
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["Yocto"]
+
+[dependency-analysis.system_settings]
+# Operating system setting
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"      # Most Yocto builds target Linux, affects machine-specific package selection
+
+[dependency-analysis.scan_options]
+# Use single dependency version in dependency tree
+da_single_dependency_versions = 0
+
+# Ignore hidden files from being processed
+da_ignore_hidden_files = 1
+
+[dependency-analysis.dependency_scopes]
+# Dependency scope options
+da_ds_test_dependencies = 0    # DEPENDS entries with ptest or *-test pattern; packages with TEST in name
+da_ds_optional_dependencies = 0 # RRECOMMENDS entries rather than RDEPENDS (recommended but not required packages)
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_general = 4
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

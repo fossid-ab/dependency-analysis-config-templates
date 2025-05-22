@@ -1,0 +1,31 @@
+# FossID-DA Configuration for C/C++
+# Applies to: Conan, CMake projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["CPP"]
+
+[dependency-analysis.system_settings]
+# Operating system setting (critical for C/C++ dependencies)
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"      # Used when resolving platform-specific libraries and build configurations
+
+[dependency-analysis.scan_options]
+# Lock file handling
+# If 0, uses lock files (conanfile.lock) when available
+# If 1, ignores lock files and uses conanfile.txt/conanfile.py
+da_ignore_lock_manifests = 0
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_general = 4
+
+[dependency-analysis.import_scan_options]
+# Get dependencies from C/C++ source includes
+da_cpp_import_search = 0    # Set to 1 to analyze includes in .cpp/.h files
+
+# Process only unmanaged dependencies from includes
+da_only_unmanaged = 0       # Applies when da_cpp_import_search=1
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 

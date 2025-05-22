@@ -1,0 +1,28 @@
+# FossID-DA Configuration for .NET/C#
+# Applies to: NuGet packages, .NET projects
+
+[dependency-analysis]
+# Add supported package managers for this ecosystem
+supported_package_managers = ["NuGet"]
+
+[dependency-analysis.system_settings]
+# Operating system setting (important for platform-specific assemblies)
+# Supported values: win32, win64, darwin, debian, unix
+da_os_type = "linux"      # Used when resolving platform-specific assemblies and NuGet packages
+
+# Framework target settings
+da_dotnet_framework = ".NETFramework4.5"
+da_dotnet_standard = ".NETStandard1.3"
+
+[dependency-analysis.scan_options]
+# Lock file handling
+# If 0, uses lock files (packages.lock.json) when available
+# If 1, ignores lock files and uses project files
+da_ignore_lock_manifests = 0
+
+[dependency-analysis.graph_depth]
+# Set maximum depth for dependency tree traversal
+da_gd_general = 4
+
+[dependency-analysis.ignore_settings]
+da_ignore_folders = "" 
