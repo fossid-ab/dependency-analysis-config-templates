@@ -11,7 +11,4 @@ This directory contains a sample configuration file for Dart and Flutter project
 - `da_ds_dependency_overrides`: Process "dependency_overrides" section in pubspec.yaml
 
 ### Dependency Tree Depth
-- `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default)
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 
+- `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default) 

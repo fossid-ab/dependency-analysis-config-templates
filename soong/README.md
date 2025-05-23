@@ -16,6 +16,3 @@ This directory contains a sample configuration file for Android projects that us
 
 ### Dependency Tree Depth
 - `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default)
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 

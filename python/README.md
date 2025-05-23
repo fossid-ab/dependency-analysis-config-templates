@@ -41,6 +41,3 @@ import os        # Standard library, not flagged
 ```
 
 Note: Version information is marked as N/A for source imports since it cannot be determined from the import statement alone.
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 

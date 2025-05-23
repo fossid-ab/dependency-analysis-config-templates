@@ -30,7 +30,4 @@ When `da_cpp_import_search = true` is set, FossID-DA will analyze C/C++ includes
 #include <functional>   // Standard library, not flagged
 ```
 
-Note: Version information is marked as N/A for source imports since it cannot be determined from the include statement alone.
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 
+Note: Version information is marked as N/A for source imports since it cannot be determined from the include statement alone. 

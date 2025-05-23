@@ -26,7 +26,4 @@ This directory contains a sample configuration file for Java, Scala, and Kotlin 
 - `da_ds_optional_dependencies`: Process Dependencies marked with <optional>true</optional>
 
 ### Dependency Tree Depth
-- `da_gd_maven`: Maximum depth for the dependency tree traversal (5 is the default)
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 
+- `da_gd_maven`: Maximum depth for the dependency tree traversal (5 is the default) 

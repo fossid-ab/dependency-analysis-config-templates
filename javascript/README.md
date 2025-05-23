@@ -23,7 +23,4 @@ This directory contains a sample configuration file for JavaScript/Node.js proje
 - `da_ds_optional_dependencies`: Process "optionalDependencies" in package.json. Usually packages that enhance functionality but aren't required (chalk, debug, etc.)
 
 ### Dependency Tree Depth
-- `da_gd_npm`: Maximum depth for dependency tree traversal (10 default). Set to 0 for direct dependencies only
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 
+- `da_gd_npm`: Maximum depth for dependency tree traversal (10 default). Set to 0 for direct dependencies only 

@@ -18,7 +18,4 @@ This directory contains a sample configuration file for .NET/C# projects that us
 - `da_ds_optional_dependencies`: Process conditional dependencies based on target framework or platform
 
 ### Dependency Tree Depth
-- `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default)
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 
+- `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default) 

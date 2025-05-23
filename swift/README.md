@@ -21,6 +21,3 @@ This directory contains a sample configuration file for Swift and Objective-C pr
 
 ### Dependency Tree Depth
 - `da_gd_cocoapod`: Maximum depth for the dependency tree traversal
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 

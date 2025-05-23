@@ -22,6 +22,3 @@ This directory contains a sample configuration file for Ruby projects that use B
 
 ### Dependency Tree Depth
 - `da_gd_gem`: Maximum depth for the dependency tree traversal (7 is the default)
-
-## Usage
-Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 
