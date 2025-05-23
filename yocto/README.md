@@ -2,14 +2,6 @@
 
 This directory contains a sample configuration file for Yocto Project and BitBake systems.
 
-## Manifest Files
-FossID-DA can analyze the following Yocto manifest files:
-- `*.bb` files: BitBake recipes
-- `*.bbappend` files: Recipe extensions
-- `*.inc` files: Include files
-- `layer.conf` files: Layer configurations
-- `packagegroup-*.bb` files: Package groupings
-
 ## Key Configuration Options
 
 ### System Settings

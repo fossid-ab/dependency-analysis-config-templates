@@ -2,10 +2,6 @@
 
 This directory contains a sample configuration file for PHP projects that use Composer.
 
-## Manifest Files
-FossID-DA can analyze the following PHP manifest files:
-- Composer: `composer.json`, `composer.lock`
-
 ## Key Configuration Options
 
 ### Processing Options

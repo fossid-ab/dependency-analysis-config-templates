@@ -2,14 +2,6 @@
 
 This directory contains a sample configuration file for JavaScript/Node.js projects that use NPM, Yarn, PNPM, or Bower.
 
-## Manifest Files
-FossID-DA can analyze the following JavaScript manifest files:
-- `package.json`: Contains project metadata and dependencies
-- `package-lock.json`: NPM lock file specifying exact dependency versions
-- `yarn.lock`: Yarn lock file
-- `pnpm-lock.yaml`: PNPM lock file
-- `bower.json`: Bower package manager configuration (legacy)
-
 ## Key Configuration Options
 
 ### Environment Settings

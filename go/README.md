@@ -2,13 +2,6 @@
 
 This directory contains a sample configuration file for Go projects that use Go Modules, Dep, Glide, or Godep.
 
-## Manifest Files
-FossID-DA can analyze the following Go manifest files:
-- GoMod: `go.mod`, `go.sum`
-- Dep (legacy): `Gopkg.toml`, `Gopkg.lock`, `godeps`
-- Glide (legacy): `glide.lock`
-- Godep (legacy): `godeps.json`
-
 ## Key Configuration Options
 
 ### Environment Settings

@@ -2,13 +2,6 @@
 
 This directory contains a sample configuration file for projects that use the Pants build system.
 
-## Manifest Files
-FossID-DA can analyze the following Pants manifest files:
-- `BUILD` files: Build targets and dependencies
-- `pants.toml`: Pants configuration
-- `3rdparty/python/requirements.txt`: Python dependencies (common pattern)
-- `3rdparty/jvm/BUILD`: JVM dependencies (common pattern)
-
 ## Key Configuration Options
 
 ### System Settings

@@ -2,14 +2,6 @@
 
 This directory contains a sample configuration file for Java, Scala, and Kotlin projects that use Maven, Gradle, Ivy, or SBT.
 
-## Manifest Files
-FossID-DA can analyze the following Java/Scala/Kotlin manifest files:
-- Maven: `pom.xml`
-- Gradle: `build.gradle`, `build.gradle.kts`, `gradle.properties`, `libs.versions.toml`
-- Ivy: `ivy.xml`, `build.xml`
-- SBT: `build.sbt`
-- Kotlin: `build.gradle.kts`, `libs.versions.toml`
-
 ## Key Configuration Options
 
 ### Environment Settings

@@ -2,13 +2,6 @@
 
 This directory contains a sample configuration file for Python projects that use PIP, Pipenv, Poetry, or Hatch.
 
-## Manifest Files
-FossID-DA can analyze the following Python manifest files:
-- PIP: `requirements.txt`, `setup.py`, `METADATA`
-- Pipenv: `Pipfile`, `Pipfile.lock`
-- Poetry: `pyproject.toml`, `poetry.lock` (only lock files are processed)
-- Hatch: `pyproject.toml`, `hatch.toml`
-
 ## Key Configuration Options
 
 ### Environment Settings

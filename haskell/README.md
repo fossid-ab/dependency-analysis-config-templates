@@ -2,11 +2,6 @@
 
 This directory contains a sample configuration file for Haskell projects that use Cabal or Stack.
 
-## Manifest Files
-FossID-DA can analyze the following Haskell manifest files:
-- Cabal: `*.cabal`, `cabal.project`, `cabal.project.freeze`
-- Stack: `stack.yaml`, `stack.yaml.lock`
-
 ## Key Configuration Options
 
 ### System Settings

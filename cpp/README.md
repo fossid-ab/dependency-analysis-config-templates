@@ -2,11 +2,6 @@
 
 This directory contains a sample configuration file for C/C++ projects that use Conan or CMake.
 
-## Manifest Files
-FossID-DA can analyze the following C/C++ manifest files:
-- Conan: `conanfile.txt`, `conanfile.py`, `conanfile.lock`
-- CMake: `CMakeLists.txt`, `*.cmake`
-
 ## Key Configuration Options
 
 ### Environment Settings

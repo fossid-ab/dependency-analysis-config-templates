@@ -2,10 +2,6 @@
 
 This directory contains a sample configuration file for Rust projects that use Cargo.
 
-## Manifest Files
-FossID-DA can analyze the following Rust manifest files:
-- Cargo: `Cargo.toml`, `Cargo.lock`
-
 ## Key Configuration Options
 
 ### Environment Settings

@@ -2,12 +2,6 @@
 
 This directory contains a sample configuration file for Swift and Objective-C projects that use CocoaPods, Carthage, or Swift Package Manager.
 
-## Manifest Files
-FossID-DA can analyze the following Swift/Objective-C manifest files:
-- CocoaPods: `Podfile`, `Podfile.lock`
-- Carthage: `Cartfile`, `Cartfile.resolved`, `Cartfile.lock`
-- Swift Package Manager: `Package.swift`
-
 ## Key Configuration Options
 
 ### Environment Settings

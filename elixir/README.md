@@ -2,11 +2,6 @@
 
 This directory contains a sample configuration file for Elixir projects that use Mix and Hex package manager.
 
-## Manifest Files
-FossID-DA can analyze the following Elixir manifest files:
-- `mix.exs`: Project and dependency declarations
-- `mix.lock`: Lock file with exact dependency versions
-
 ## Key Configuration Options
 
 ### System Settings

@@ -2,11 +2,6 @@
 
 This directory contains a sample configuration file for Ruby projects that use Bundler or Gem.
 
-## Manifest Files
-FossID-DA can analyze the following Ruby manifest files:
-- Bundler: `Gemfile`, `Gemfile.lock`
-- Gem: `*.gemspec`
-
 ## Key Configuration Options
 
 ### Environment Settings

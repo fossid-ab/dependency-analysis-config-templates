@@ -2,12 +2,6 @@
 
 This directory contains a sample configuration file for Android projects that use the Soong build system.
 
-## Manifest Files
-FossID-DA can analyze the following Soong manifest files:
-- `Android.bp`: Blueprint build files
-- `Android.mk`: Legacy make files (still used in AOSP)
-- `MODULE_LICENSE_*` files: License declarations
-
 ## Key Configuration Options
 
 ### System Settings

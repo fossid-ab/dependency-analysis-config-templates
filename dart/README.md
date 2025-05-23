@@ -2,10 +2,6 @@
 
 This directory contains a sample configuration file for Dart and Flutter projects that use Pub.
 
-## Manifest Files
-FossID-DA can analyze the following Dart manifest files:
-- Pub: `pubspec.yaml`, `pubspec.lock`
-
 ## Key Configuration Options
 
 ### Processing Options

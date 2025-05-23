@@ -2,12 +2,6 @@
 
 This directory contains a sample configuration file for projects that use the Bazel build system.
 
-## Manifest Files
-FossID-DA can analyze the following Bazel manifest files:
-- `WORKSPACE`: Workspace definition and external dependencies
-- `BUILD` files: Build targets and dependencies
-- `MODULE.bazel`: Bzlmod dependencies (newer Bazel versions)
-
 ## Key Configuration Options
 
 ### System Settings
