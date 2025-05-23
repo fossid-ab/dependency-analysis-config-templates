@@ -1,10 +1,6 @@
 # FossID-DA Configuration for Swift/Objective-C
 # Applies to: CocoaPods, Carthage, Swift Package Manager
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["CocoaPods"]
-
 [dependency-analysis.system_settings]
 # Operating system setting (important for Swift/Objective-C dependencies)
 # Supported values: win32, win64, darwin, debian, unix
