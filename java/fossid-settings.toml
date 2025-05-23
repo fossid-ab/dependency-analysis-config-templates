@@ -1,10 +1,6 @@
 # FossID-DA Configuration for Java/Scala/Kotlin
 # Applies to: Maven, Gradle, Ivy, SBT projects
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["Maven", "Gradle", "Ivy", "SBT"]
-
 [dependency-analysis.system_settings]
 # Version settings
 da_maven_version = "3.9.2"  # Affects POM resolution strategy and repository access

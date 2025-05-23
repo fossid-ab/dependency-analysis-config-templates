@@ -4,14 +4,13 @@ This repository contains ready-to-use [Settings Files](https://eval-eu.foss.id/c
 
 Each configuration file is organized into logical sections:
 
-- `[dependency-analysis]`: Enables the package managers to analyze.
 - `[dependency-analysis.system_settings]`: Language/package manager versions and OS settings
 - `[dependency-analysis.scan_options]`: Controls how FDA processes manifests and source files
 - `[dependency-analysis.dependency_scopes]`: Controls which dependency scopes are analyzed
 - `[dependency-analysis.graph_depth]`: Controls how deep dependency trees are traversed
 - `[dependency-analysis.ignore_settings]`: Controls which folders to ignore during analysis
 
-For any settings not defined in the settings file, FDA will read from the Global Settings defined in the FossID Configuration (fossid.conf). These settings files focus only on language-specific settings that may vary by project.
+For settings not defined in the settings file, FDA reads the Global Settings in the FossID Configuration (fossid.conf). These settings files focus on language-specific settings that may vary by project.
 
 ## How to Use these Configuration Files
 

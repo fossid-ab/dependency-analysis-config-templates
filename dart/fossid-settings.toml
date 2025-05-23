@@ -1,10 +1,6 @@
 # FossID-DA Configuration for Dart/Flutter
 # Applies to: Pub, Flutter projects
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["Pub"]
-
 [dependency-analysis.scan_options]
 # Lock file handling
 # If 0, uses lock files (pubspec.lock) when available

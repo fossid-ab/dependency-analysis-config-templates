@@ -1,10 +1,6 @@
 # FossID-DA Configuration for JavaScript/Node.js
 # Applies to: NPM, Yarn, PNPM, Bower projects
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["NPM", "Yarn", "PNPM", "Bower"]
-
 [dependency-analysis.system_settings]
 # Operating system setting - critical for native modules (node-gyp based packages)
 # Supported values: win32, win64, darwin, debian, unix

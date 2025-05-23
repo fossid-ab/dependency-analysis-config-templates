@@ -1,10 +1,6 @@
 # FossID-DA Configuration for .NET/C#
 # Applies to: NuGet packages, .NET projects
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["NuGet"]
-
 [dependency-analysis.system_settings]
 # Operating system setting (important for platform-specific assemblies)
 # Supported values: win32, win64, darwin, debian, unix

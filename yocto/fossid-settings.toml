@@ -1,10 +1,6 @@
 # FossID-DA Configuration for Yocto
 # Applies to: Yocto Project, BitBake
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["Yocto"]
-
 [dependency-analysis.system_settings]
 # Operating system setting
 # Supported values: win32, win64, darwin, debian, unix

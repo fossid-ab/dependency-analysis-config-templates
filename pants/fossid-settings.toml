@@ -1,10 +1,6 @@
 # FossID-DA Configuration for Pants
 # Applies to: Pants build system
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["Pants"]
-
 [dependency-analysis.system_settings]
 # Operating system setting
 # Supported values: win32, win64, darwin, debian, unix

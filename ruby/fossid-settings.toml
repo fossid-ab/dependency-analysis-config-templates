@@ -1,10 +1,6 @@
 # FossID-DA Configuration for Ruby
 # Applies to: Bundler, Gem projects
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["Gem"]
-
 [dependency-analysis.system_settings]
 # Version settings
 da_ruby_version = "3.2.2"

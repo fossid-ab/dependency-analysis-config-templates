@@ -1,10 +1,6 @@
 # FossID-DA Configuration for Rust/Cargo
 # Applies to: Cargo projects
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["Cargo"]
-
 [dependency-analysis.system_settings]
 # Operating system setting (corresponds to Rust's target-specific dependencies)
 # Supported values: win32, win64, darwin, debian, unix

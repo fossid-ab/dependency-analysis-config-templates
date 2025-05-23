@@ -1,10 +1,6 @@
 # FossID-DA Configuration for PHP/Composer
 # Applies to: Composer projects
 
-[dependency-analysis]
-# Add supported package managers for this ecosystem
-supported_package_managers = ["Composer"]
-
 [dependency-analysis.scan_options]
 # Lock file handling
 # If 0, uses lock files (composer.lock) when available
