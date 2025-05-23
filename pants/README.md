@@ -15,7 +15,7 @@ This directory contains a sample configuration file for projects that use the Pa
 - `da_ds_test_dependencies`: Process dependencies for test targets
 
 ### Dependency Tree Depth
-- `da_gd_general`: Maximum depth for the dependency tree traversal
+- `da_gd_general`: Maximum depth for the dependency tree traversal (4 is the default)
 
 ## Usage
 Copy `fossid-settings.toml` to your project's root directory or to the directory specified in your FossID configuration. 
