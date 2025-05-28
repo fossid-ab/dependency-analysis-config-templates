@@ -1,8 +1,8 @@
 # FossID-DA Sample Configuration Files
 
-This repository contains ready-to-use configuration files for FossID Dependency Analysis (FDA) that include all available settings that apply to each programming language ecosystem it can analyze. 
+This repository contains ready-to-use configuration files for FossID Dependency Analysis (FDA). 
 
-Each configuration file is organized into logical sections:
+The repo structure mirrors the supported dependency ecosystems. Each config file includes all the settings that apply to that ecosystem and is organized into logical sections:
 
 - `[dependency-analysis.system_settings]`: Language/package manager versions and OS settings
 - `[dependency-analysis.scan_options]`: Controls how FDA processes manifests and source files
@@ -21,7 +21,7 @@ For settings not defined in the settings file, FDA reads the Global Settings in 
 3. Customize the settings as needed for your specific project requirements
 
 ## What if my Project uses multiple languages?
-Simply put the contents from multiple configuration files into a single one! 
+Simply consolidate the contents from multiple configuration files into a single one! 
 
 ## Support
-This repository is maintained by the Customer Success Team. We will do our best to keep it updated as FossID-DA is updated, but we may miss things. If you notice discrepancies or issues please open a support ticket in our [Support Portal](https://support.fossid.com/) or open a PR with a fix if you feel generous. :)
+This repository is maintained by the Customer Success Team. We will do our best to keep it updated as FossID-DA is updated, but we may miss things. If you notice discrepancies or issues please open a support ticket in our [Support Portal](https://support.fossid.com/) or open a PR with a fix. :)
