@@ -1,6 +1,10 @@
 # FossID-DA Configuration for Dart/Flutter
 # Applies to: Pub, Flutter projects
 
+[dependency-analysis.system_settings]
+# Operating system type affects binary selection and platform-specific dependencies
+da_os_type = "unix"  # Options: win32, win64, darwin, debian, unix
+
 [dependency-analysis.scan_options]
 # Lock file handling
 # If 0, uses lock files (pubspec.lock) when available
@@ -8,11 +12,17 @@
 da_ignore_lock_manifests = 0
 
 [dependency-analysis.dependency_scopes]
-da_ds_dependency_overrides = 0    # Override specific dependencies
+# Override specific dependencies in pubspec.yaml
+da_ds_dependency_overrides = 0    
+
+# Development dependencies from pubspec.yaml's dev_dependencies section
+# These are dependencies only needed during development (testing, linting, etc.)
+da_ds_dev_dependencies = 0        
 
 [dependency-analysis.graph_depth]
 # Set maximum depth for dependency tree traversal
 da_gd_general = 4
 
 [dependency-analysis.ignore_settings]
-da_ignore_folders = "" 
+# Folders to ignore during analysis
+da_ignore_folders = ".dart_tool,build,.pub-cache,.pub,.flutter-plugins,.flutter-plugins-dependencies" 
