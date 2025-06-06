@@ -1,6 +1,6 @@
 # FossID-DA Sample Configuration Files
 
-This repository contains ready-to-use configuration files for FossID Dependency Analysis (FDA). 
+This repository contains ready-to-use configuration files for FossID Dependency Analysis (FossID-DA). 
 
 The repo structure mirrors the supported dependency ecosystems. Each config file includes all the settings that apply to that ecosystem and is organized into logical sections:
 
